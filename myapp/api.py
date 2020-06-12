@@ -8,11 +8,11 @@ app_name = 'myapplication'
 @app.route('/version', methods=['GET'])
 def home():
     response = {
-        app_name: {
+        app_name: [{
             "version": os.environ['VERSION'],
             "lastcommitsha": os.environ['LAST_COMMIT_SHA'],
             "description": "pre-interview technical test"
-        }
+        }]
     }
     return response
 
