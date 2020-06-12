@@ -47,9 +47,9 @@ pytest
 ## Deploying the application
 The docker image can be deployed on container-orchestration tools like [Kubernetes](https://docs.docker.com/get-started/kube-deploy/).
 
-For that, Kubernetes manifests were created to deploy the application in a cluster.
+For that, Kubernetes manifests were created to deploy the application in a existing cluster.
 
-Assuming that credentials and cluster are already set up, run the command to deploy:
+Assuming that the authentication and cluster are already set up, run the command to deploy the python application:
 
 ```
 ./deploy.sh
